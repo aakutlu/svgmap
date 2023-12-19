@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="svgmap.js"></script>
+    <script src="parse.js"></script>
+    <script src="utility.js"></script>
+    <!-- <script src="zoomer.js"></script> -->
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Svgmap.js</title>
+  </head>
+  <body>
+    <h1>Svg Map Container</h1>
+    <div class="btns">
+      <button>Toggle Labels</button>
+      <button>Toggle Data</button>
+      <button id="btn1">Zoom İst</button>
+    </div>
+    <div id="map-area">
+      <div id="mapcontainer"></div>
+      <div class="zoom">
+        <div id="zoom-in" class="zoom-btn">+</div>
+        <div id="zoom-out" class="zoom-btn">-</div>
+        <div id="zoom-default" class="zoom-btn">*</div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", (event) => {});
+    </script>
+  </body>
+</html>

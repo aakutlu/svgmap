@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+#mapcontainer {
+  width: 100%;
+  border: solid 1px black;
+}
+#map-area {
+  position: relative;
+}
+text {
+  font-family: Poppins, monospace;
+  fill: black;
+  font-weight: 800;
+  font-size: 1em;
+  text-anchor: middle;
+  /*   text-shadow: 1px 0 0 white, 0 1px 0 white, -1px 0 0 white, 0 -1px 0 white;
+  text-shadow: 0px -2px 5px rgba(0, 0, 0, 1);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8); */
+}
+svg g#labels text {
+  fill: black;
+  font-weight: 700;
+  font-size: 0.01em;
+  pointer-events: none;
+  user-select: none;
+}
+svg g#datas text {
+  fill: black;
+  font-weight: 700;
+  font-size: 0.01em;
+  pointer-events: none;
+  user-select: none;
+}
+.btns {
+  display: inline-block;
+}
+
+path {
+  /* stroke-width: 0.2px; */
+  /* stroke: black; */
+  /* vector-effect: non-scaling-stroke; */
+}
+path:hover {
+  filter: drop-shadow(0px 0px 0px rgb(0 0 0 / 1));
+  cursor: pointer;
+  fill: gray;
+}
+
+.zoom {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+.zoom-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background: transparent;
+  font-size: 4rem;
+  font-family: "Poppins", "Noto Sans", sans-serif;
+  font-weight: 600;
+  user-select: none;
+  cursor: pointer;
+}
+.zoom-btn:hover {
+  transform: scale(1.1);
+}
